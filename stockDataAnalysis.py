@@ -35,3 +35,7 @@ plt.plot(data['200-Day MA'], label='200-Day Moving Average')
 plt.title('Stock Price and Moving Averages')
 plt.legend()
 plt.show()
+
+# show daily returns
+data['Daily Return'].plot(figsize=(10,6),title='Daily Returns')
+plt.show()
