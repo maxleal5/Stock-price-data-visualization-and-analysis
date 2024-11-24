@@ -1,5 +1,6 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
+import plotly.express as px
 
 # choose a stock symbol 
 stock = yf.Ticker('MSTR')
@@ -50,3 +51,6 @@ plt.show()
 sharpe_ratio = data['Daily Return'].mean() / data['Daily Return'].std()
 print(f'Sharpe Ratio: {sharpe_ratio}')
 
+# create interactive charts for better analysis
+fig = px.line(data, x=data.index, y='Close', title='Interactive Stock Price')
+fig.show()
