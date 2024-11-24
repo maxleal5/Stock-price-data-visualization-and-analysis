@@ -43,3 +43,10 @@ plt.show()
 # show volatility
 data['30-Day Volatility'].plot(figsize=(10,6), title="30-Day Rolling Volatility")
 plt.show()
+
+
+# statistical analysis 
+# find sharpe ratio (assuming risk free rate of zero)
+sharpe_ratio = data['Daily Return'].mean() / data['Daily Return'].std()
+print(f'Sharpe Ratio: {sharpe_ratio}')
+
