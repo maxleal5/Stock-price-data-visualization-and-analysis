@@ -59,3 +59,12 @@ fig.show()
 
 # save data to csv file for future analysis
 data.to_csv('stock_data_analysis.csv')
+
+# things to add: 
+# backtest strategy like buying
+# when 50-day ma crosses above 200-day ma (which is the golden cross)
+# and sell when it crosses below (which is the death cross)
+
+# comparing multiple stocks and analyze them together
+# Risk analysis using VaR
+# analyzing news and investor sentiment to predict moves in price
