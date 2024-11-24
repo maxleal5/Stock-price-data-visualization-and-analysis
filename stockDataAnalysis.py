@@ -39,3 +39,7 @@ plt.show()
 # show daily returns
 data['Daily Return'].plot(figsize=(10,6),title='Daily Returns')
 plt.show()
+
+# show volatility
+data['30-Day Volatility'].plot(figsize=(10,6), title="30-Day Rolling Volatility")
+plt.show()
