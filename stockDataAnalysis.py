@@ -43,6 +43,8 @@ plt.show()
 
 # show volatility
 data['30-Day Volatility'].plot(figsize=(10,6), title="30-Day Rolling Volatility")
+#save plots as an image
+plt.savefig('stock_vol_plot.png')
 plt.show()
 
 
@@ -54,3 +56,6 @@ print(f'Sharpe Ratio: {sharpe_ratio}')
 # create interactive charts for better analysis
 fig = px.line(data, x=data.index, y='Close', title='Interactive Stock Price')
 fig.show()
+
+# save data to csv file for future analysis
+data.to_csv('stock_data_analysis.csv')
