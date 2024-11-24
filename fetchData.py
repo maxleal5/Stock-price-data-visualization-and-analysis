@@ -20,5 +20,9 @@ data = data.fillna(method='ffill')
 data['Daily Return'] = data['Close'].pct_change()
 
 #calculating 50 and 200 day moving avgs 
-# data['50']
+data['50-Day MA']= data['Close'].rolling(window=50).mean()
+data['200-Day MA']= data['Close'].rolling(window=200).mean()
+
+# adding 30 day volatility
+data['30-Day Volatility'] = data['Daily Return'].rolling(window=30).std() * (252**.05) # annualized vol
 print(data.tail())
