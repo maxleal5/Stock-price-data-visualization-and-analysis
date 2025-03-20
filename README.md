@@ -8,7 +8,7 @@ stock data, gaining insights into trends, potential investment strategies and ri
 - Fetches stock price data from Yahoo Finance using the 'yfinance' API.
 - Calculates key financial metrics
 - Plots visualizations of stock prices, moving averages, daily returns and volatility
-- Performs basic statistical analysis like the Sharpe raito and maximum drawdown.
+- Performs basic statistical analysis like the Sharpe ratio and maximum drawdown.
 - Allows for easy modification to analyze different stocks and time periods.
 
 ## Technologies Used
